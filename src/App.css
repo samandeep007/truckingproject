@@ -1,3 +1,23 @@
+@font-face {
+  font-family: 'myFont';
+  src: url('../public/fonts/FugazOne-Regular.ttf') format('woff2');
+  /* Add more src formats if necessary */
+}
+
+@font-face {
+  font-family: 'myFont2';
+  src: url('../public/fonts/LilitaOne-Regular.ttf') format('woff2');
+  /* Add more src formats if necessary */
+}
+
+
+@font-face {
+  font-family: 'myFont3';
+  src: url('../public/fonts/Hemisphers\ Bold\ Sans.ttf') format('woff2');
+  /* Add more src formats if necessary */
+}
+
+
 .App {
   text-align: center;
 }
@@ -35,4 +55,174 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+#parent {
+  background: url(../public/images/AdobeStock_299209735.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height: 100vh;
+
+  
+}
+
+
+#number1 {
+
+  float: left;
+  margin-left: 100px;
+  position: relative; 
+  z-index: 50;
+  top: 150px;
+}
+
+#number1 img {
+  width: 280px;
+  height: 280px;
+}
+
+
+
+
+.glass- {
+  background: transparent;
+  backdrop-filter: blur(10px);
+ 
+  overflow: hidden;
+  position: relative;
+  z-index: 2; /* Ensure the shine stays above other content */
+}
+
+
+.shine {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(0,0,0,0.3) 50%,
+    rgba(248, 248, 248, 0) 70%, /* Adjust the opacity here */
+    rgba(4, 32, 69, 0.9) 100%, /* Adjust the opacity here */
+    rgba(4, 32, 69, 0.9) 100% /* Adjust the opacity here */
+  );
+}
+
+
+#headerDesc {
+  font-family: myFont;
+  color: white;
+  position: relative;
+  top: 150px;
+  font-size: 25px;
+  width: 80%;
+  margin: 0 auto;
+  text-shadow: 4px 4px 0 black;
+}
+
+
+#about {
+  width: 100%;
+  height: 730px;
+ background-color: #12172f;
+position: relative;
+}
+
+#headerText {
+  position: relative;
+  top: 150px;
+  text-align: center;
+  margin-left: 20px;
+  
+}
+
+#heroText1 {
+  font-family: myFont;
+  font-size: 60px;
+  color: whitesmoke;
+  text-shadow: 4px 4px 0 #12172f;
+}
+
+#heroText2 {
+  font-family: myFont;
+  font-size: 100px;
+  color: #12172f;
+  text-shadow: 4px 4px 0 white;
+ 
+}
+
+.logo {
+font-family: myFont3;
+color: #12172f;
+
+}
+
+.links {
+  font-family: myFont;
+  font-size: 18px;
+}
+
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 768px) {
+  #number1 {
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+    top: 50px;
+  }
+
+  #parent {
+    background: url(../public/images/mobile.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    height: 100vh;
+  
+    
+  }
+
+  #number1 img {
+    max-width: 80%;
+  }
+
+  #headerDesc {
+    font-size: 16px;
+  }
+
+  #heroText1 {
+    font-size: 25px;
+     color: #435991;
+     text-shadow: none;
+ 
+
+    margin-top: -20px
+  }
+
+  #heroText2 {
+    font-size: 35px;
+
+
+  }
+
+  .logo {
+    font-size: 30px;
+  }
+
+  .links {
+    font-size: 14px;
+  }
+
+
+  .shine {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: transparent
+  }
+
 }
