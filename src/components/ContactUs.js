@@ -38,8 +38,8 @@ const ContactUs = () => {
             <div>
               <p className="text-lg font-semibold">Address</p>
               <p className="text-xl">
-              5208 169 Ave NW <br/>
-Edmonton AB T5Y 0R9
+             3730 108 Ave NE, <br/>
+             Calgary, AB T3N 1A6
               </p>
             </div>
           </div>
